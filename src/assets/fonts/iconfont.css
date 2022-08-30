@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1661520476579') format('truetype');
+}
+
+/*.iconfont*/
+[class*='icon-'] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-auto:before {
+  content: "\e6eb";
+}
+
+.icon-all:before {
+  content: "\e6ef";
+}
+
+.icon-bussiness-man:before {
+  content: "\e6f0";
+}
+
+.icon-component:before {
+  content: "\e6f2";
+}
+
+.icon-code:before {
+  content: "\e6f3";
+}
+
+.icon-copy:before {
+  content: "\e6f4";
+}
+
+.icon-data:before {
+  content: "\e6f9";
+}
+
+.icon-gift:before {
+  content: "\e6fa";
+}
+
+.icon-integral:before {
+  content: "\e6fb";
+}
+
+.icon-nav-list:before {
+  content: "\e6fd";
+}
+
+.icon-pic:before {
+  content: "\e6ff";
+}
+
+.icon-banquan:before {
+  content: "\e98b";
+}
+
+.icon-anquanyinsi:before {
+  content: "\e98c";
+}
+
+.icon-dicengjiagou:before {
+  content: "\e98d";
+}
+
+.icon-cangchucangku:before {
+  content: "\e98e";
+}
+
+.icon-bingtutubiao:before {
+  content: "\e98f";
+}
+
+.icon-chufang:before {
+  content: "\e990";
+}
+
+.icon-chayan:before {
+  content: "\e991";
+}
+
+.icon-erweima:before {
+  content: "\e992";
+}
+
+.icon-fapiao:before {
+  content: "\e993";
+}
+
+.icon-fenbushi:before {
+  content: "\e994";
+}
+
+.icon-cunchu:before {
+  content: "\e995";
+}
+
+.icon-dingdan:before {
+  content: "\e996";
+}
+

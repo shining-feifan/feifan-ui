@@ -2,9 +2,12 @@
   <div class="ff-button " :class="[`ff-button-${type}`,{
     'is-plain': plain,
      'is-round': round,
-     'is-circle': circle
-  }]" @click="handleClick">
-    <slot></slot>
+     'is-circle': circle,
+     'is-disabled':disabled
+  }]" @click="handleClick"  :disabled="disabled" >
+
+    <i v-if="icon" :class="icon"></i>
+    <span v-if="$slots.default"><slot></slot></span>
   </div>
 </template>
 
@@ -26,13 +29,24 @@ export default {
     circle: {
       type: Boolean,
       default: false
+    },
+    icon: {
+      type:String,
+      default: ''
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
     handleClick (e) {
       console.log(e)
-      this.$emit('click',e)
+      this.$emit('click', e)
     }
+  },
+  mounted() {
+    console.log(this.disabled)
   }
 }
 </script>
@@ -216,5 +230,15 @@ export default {
   border-radius: 50%;
   padding: 12px;
 }
+// 字体标签
+//.ff-button [class*=icon-]+span {
+//  margin-left: 5px;
+//}
 
+.ff-button [class*=icon-]+span{
+  margin-left: 5px;
+}
+.ff-button.is-disabled{
+  cursor: no-drop;
+}
 </style>
